@@ -1,5 +1,8 @@
 # AcmeChallenge
 
+[![Gem Version](https://img.shields.io/gem/v/rack-canonical-host.svg)](http://rubygems.org/gems/rack-canonical-host)
+[![Build Status](https://img.shields.io/travis/tylerhunt/rack-canonical-host/master.svg)](https://travis-ci.org/tylerhunt/rack-canonical-host)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/acme_challenge`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
@@ -22,11 +25,20 @@ Or install it yourself as:
 
 ## Usage
 
-Simply mount as middleware and specify the challenge response.
+Simply mount as middleware and specify the challenge response. Add something like this to your `config.ru`:
 
 ```ruby
 use AcmeChallenge, 'UG0AjhvK-plt_4TjdxFMHgINYdqB_At1ukwMH1ItZXo.pI79XvTWAEyw1GO5BJYjxGs5KZrrSDSum9i5JZqeYsQ'
 ```
+
+It may be handy to do something like this:
+
+```ruby
+use AcmeChallenge, ENV['ACME_CHALLENGE'] if ENV['ACME_CHALLENGE']
+```
+
+That way, you don't have to redeploy to do a new challenge.
+
 
 ## Development
 
