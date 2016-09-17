@@ -3,9 +3,8 @@
 [![Gem Version](https://img.shields.io/gem/v/rack-canonical-host.svg)](http://rubygems.org/gems/rack-canonical-host)
 [![Build Status](https://img.shields.io/travis/tylerhunt/rack-canonical-host/master.svg)](https://travis-ci.org/tylerhunt/rack-canonical-host)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/acme_challenge`. To experiment with that code, run `bin/console` for an interactive prompt.
+Simple rack middeware for responding to ACME challenge like LetsEncrypt uses.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,6 +21,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install acme_challenge
+
 
 ## Usage
 
@@ -54,4 +54,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
