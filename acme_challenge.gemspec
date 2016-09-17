@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sam Soffes']
   spec.email         = ['sam@soff.es']
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = 'Simple rack middeware for responding to ACME challenge.'
+  spec.description   = 'Simple rack middeware for responding to ACME challenge like LetsEncrypt uses.'
   spec.homepage      = 'https://github.com/soffes/acme_challenge'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split('\x0').reject do |f|
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = 'exe'
@@ -24,4 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.13'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
+  spec.add_development_dependency 'minitest-reporters', '~> 1.1'
+  spec.add_development_dependency 'rack-test', '~> 0.6'
 end

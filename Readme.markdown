@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simply mount as middleware and specify the challenge response.
+
+```ruby
+use AcmeChallenge, 'UG0AjhvK-plt_4TjdxFMHgINYdqB_At1ukwMH1ItZXo.pI79XvTWAEyw1GO5BJYjxGs5KZrrSDSum9i5JZqeYsQ'
+```
 
 ## Development
 
