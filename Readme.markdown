@@ -37,7 +37,7 @@ It may be handy to do something like this:
 use AcmeChallenge, ENV['ACME_CHALLENGE'] if ENV['ACME_CHALLENGE']
 ```
 
-That way, you don't have to redeploy to do a new challenge.
+Using environment variables is nice since you don't have to redeploy to do a new challenge.
 
 
 ## Development
