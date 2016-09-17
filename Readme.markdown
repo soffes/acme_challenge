@@ -1,7 +1,7 @@
 # AcmeChallenge
 
-[![Gem Version](https://img.shields.io/gem/v/rack-canonical-host.svg)](http://rubygems.org/gems/rack-canonical-host)
-[![Build Status](https://img.shields.io/travis/tylerhunt/rack-canonical-host/master.svg)](https://travis-ci.org/tylerhunt/rack-canonical-host)
+[![Gem Version](https://img.shields.io/gem/v/acme_challenge.svg)](http://rubygems.org/gems/acme_challenge)
+[![Build Status](https://img.shields.io/travis/soffes/acme_challenge/master.svg)](https://travis-ci.org/soffes/acme_challenge)
 
 Simple rack middeware for responding to ACME challenge like LetsEncrypt uses.
 
